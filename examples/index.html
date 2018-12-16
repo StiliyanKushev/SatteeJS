@@ -19,7 +19,34 @@
             width: 500,
             height: 500,
             layers: 2,
-            name: "example"
+            name: "example",
+            main: "main"
+        });
+        Sattee.init("main",{
+            setup:function (){
+                console.log("main scene");
+                this.i = 0;
+            },
+            loop:function (delta){
+                console.log("main " + this.i++);
+                if(this.i % 5 == 0){
+                    //go to the next scene
+                    Sattee.switchScene("second",true);
+                }
+            }
+        });
+        Sattee.init("second",{
+            setup: function(){
+                console.log("second scene");
+                this.i = 0;
+            },
+            loop: function (delta){
+                console.log("second " + this.i++);
+                if(this.i % 5 == 0){
+                    //exit the whole game
+                    Sattee.switchScene("main",true);
+                }
+            }
         });
     </script>
 </body>
