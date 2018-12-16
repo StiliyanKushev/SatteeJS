@@ -1,0 +1,20 @@
+support:
+    -- Loading images/sprites, videos and sounds
+        -- Do that at the start, using the p5 js renderrer
+    -- Be able to easly create new entities and obstacles
+    -- Multiplayer
+        -- using socket.io and maybe some more stuff
+    -- Have multiple game scenes
+    -- Have some default object functions like button functionality
+    -- Canvas layering
+    -- Some editors
+        -- sound editor
+        -- map editor
+        -- graphix editor
+    -- Easy to use with p5 js like syntax
+
+syntax Examples:
+
+let config = {
+    
+};
