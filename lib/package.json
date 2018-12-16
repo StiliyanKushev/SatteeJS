@@ -1,0 +1,19 @@
+{
+  "name": "lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "bin": {
+    "lib": "sattee.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0"
+  }
+}
