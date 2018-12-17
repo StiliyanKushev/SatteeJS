@@ -33,14 +33,30 @@
                 });
             },
             loop:function (delta){
-                this.x += 0.1;
-                this.y += 0.1;
                 Sattee.clear(1);
                 Sattee.draw(1,function(){
-                    Sattee.rect(this.x + 80,this.y,20,20,{strokeColor:"red",color:"blue",strokeSize:10});
-                    Sattee.ellipse(this.x + 50,this.y + 10,20,20,{strokeColor:"blue",color:"red",strokeSize:30});
-                    Sattee.triangle(this.x,this.y,this.x + 20,this.y,this.x + 10,this.y + 20,{strokeColor:"green",color:"yellow",strokeSize:10});
+                    Sattee.rect(this.x,this.y,20,20);
                 });
+            },
+            mouseClicked: function(){
+                console.log("mouse is pressed");
+            },
+            keyPressed: function(key){
+                if(key == "a"){
+                    this.x -= 2;
+                }
+                else if(key == "d"){
+                    this.x += 2;
+                }
+                else if(key == "w"){
+                    this.y -= 2;
+                }
+                else if(key == "s"){
+                    this.y += 2;
+                }
+            },
+            keyDown: function(key){
+                console.log(`'${key}' is down`);
             }
         });
     </script>
