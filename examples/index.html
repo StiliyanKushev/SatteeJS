@@ -23,29 +23,24 @@
             main: "main"
         });
         Sattee.init("main",{
+            x:0,
+            y:0,
             setup:function (){
-                console.log("main scene");
-                this.i = 0;
+                //all of the drawing stuff in the function will be displayed in the canvas with name
+                //example0
+                Sattee.draw(0,function(){
+                    Sattee.background(51,51,51);
+                });
             },
             loop:function (delta){
-                console.log("main " + this.i++);
-                if(this.i % 5 == 0){
-                    //go to the next scene
-                    Sattee.switchScene("second",true);
-                }
-            }
-        });
-        Sattee.init("second",{
-            setup: function(){
-                console.log("second scene");
-                this.i = 0;
-            },
-            loop: function (delta){
-                console.log("second " + this.i++);
-                if(this.i % 5 == 0){
-                    //exit the whole game
-                    Sattee.switchScene("main",true);
-                }
+                this.x += 0.1;
+                this.y += 0.1;
+                Sattee.clear(1);
+                Sattee.draw(1,function(){
+                    Sattee.rect(this.x + 80,this.y,20,20,{strokeColor:"red",color:"blue"});
+                    Sattee.ellipse(this.x + 50,this.y + 10,20,20,{strokeColor:"blue",color:"red"});
+                    Sattee.triangle(this.x,this.y,this.x + 20,this.y,this.x + 10,this.y + 20,{strokeColor:"green",color:"yellow",strokeSize:10});
+                });
             }
         });
     </script>
