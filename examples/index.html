@@ -33,6 +33,12 @@
                 });
             },
             loop:function (delta){
+                // if(Sattee.keys[65]){
+                //     this.x -= 3;
+                // }
+                // if(Sattee.keys[68]){
+                //     this.x += 3;
+                // }
                 Sattee.clear(1);
                 Sattee.draw(1,function(){
                     Sattee.rect(this.x,this.y,20,20);
@@ -41,22 +47,20 @@
             mouseClicked: function(){
                 console.log("mouse is pressed");
             },
-            keyPressed: function(key){
-                if(key == "a"){
-                    this.x -= 2;
+            keyDown: function(keys){
+                console.log(keys);
+                if(keys.includes("A")){
+                    this.x -= 3;
                 }
-                else if(key == "d"){
-                    this.x += 2;
+                if(keys.includes("D")){
+                    this.x += 3;
                 }
-                else if(key == "w"){
-                    this.y -= 2;
+                if(keys.includes("W")){
+                    this.y -= 3;
                 }
-                else if(key == "s"){
-                    this.y += 2;
+                if(keys.includes("S")){
+                    this.y += 3;
                 }
-            },
-            keyDown: function(key){
-                console.log(`'${key}' is down`);
             }
         });
     </script>
