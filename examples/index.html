@@ -48,19 +48,21 @@
                 console.log("mouse is pressed");
             },
             keyDown: function(keys){
-                console.log(keys);
                 if(keys.includes("A")){
-                    this.x -= 3;
+                    this.x -= 0.4;
                 }
                 if(keys.includes("D")){
-                    this.x += 3;
+                    this.x += 0.4;
                 }
                 if(keys.includes("W")){
-                    this.y -= 3;
+                    this.y -= 0.4;
                 }
                 if(keys.includes("S")){
-                    this.y += 3;
+                    this.y += 0.4;
                 }
+            },
+            keyUp: function(key){
+                console.log(key);
             }
         });
     </script>
