@@ -18,7 +18,7 @@
         Sattee.configure({
             width: 500,
             height: 500,
-            layers: 2,
+            layers: 1,
             name: "example",
             main: "main",
             // timeout , interval , animation
@@ -27,7 +27,7 @@
         Sattee.init("main",{
             x:0,
             y:0,
-            speed: 100,
+            speed: 150,
             setup:function (){
                 Sattee.frameRate = 120;
                 Sattee.draw(0,function(){
@@ -35,24 +35,24 @@
                 });
             },
             loop:function (){
-                Sattee.clear(1,{x:this.x,y:this.y,width:20,height:20,offset:this.speed});
-                Sattee.draw(1,function(){
+                Sattee.clear(0,{x:this.x,y:this.y,width:20,height:20,offset:this.speed});
+                Sattee.draw(0,function(){
+                    Sattee.background(51,51,51);
                     Sattee.rect(this.x,this.y,20,20);
                 });
-                this.x += this.speed / 200;
             },
             keyDown: function(keys){
                 if(keys.includes("A")){
-                    this.x -= this.speed * Sattee.delta;
+                    this.x -= Math.floor(this.speed * Sattee.delta);
                 }
                 if(keys.includes("D")){
-                    this.x += this.speed * Sattee.delta;                    
+                    this.x += Math.floor(this.speed * Sattee.delta);
                 }
                 if(keys.includes("W")){
-                    this.y -= this.speed * Sattee.delta; 
+                    this.y -= Math.floor(this.speed * Sattee.delta);
                 }
                 if(keys.includes("S")){
-                    this.y += this.speed * Sattee.delta;                    
+                    this.y += Math.floor(this.speed * Sattee.delta);                 
                 }
             }
         });
