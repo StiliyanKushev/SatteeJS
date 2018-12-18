@@ -25,44 +25,31 @@
         Sattee.init("main",{
             x:0,
             y:0,
+            speed: 0.4,
             setup:function (){
-                //all of the drawing stuff in the function will be displayed in the canvas with name
-                //example0
                 Sattee.draw(0,function(){
                     Sattee.background(51,51,51);
                 });
             },
-            loop:function (delta){
-                // if(Sattee.keys[65]){
-                //     this.x -= 3;
-                // }
-                // if(Sattee.keys[68]){
-                //     this.x += 3;
-                // }
-                Sattee.clear(1);
+            loop:function (){
+                Sattee.clear(1,{x:this.x,y:this.y,width:20,height:20});
                 Sattee.draw(1,function(){
                     Sattee.rect(this.x,this.y,20,20);
                 });
             },
-            mouseClicked: function(){
-                console.log("mouse is pressed");
-            },
             keyDown: function(keys){
                 if(keys.includes("A")){
-                    this.x -= 0.4;
+                    this.x -= this.speed;
                 }
                 if(keys.includes("D")){
-                    this.x += 0.4;
+                    this.x += this.speed;                    
                 }
                 if(keys.includes("W")){
-                    this.y -= 0.4;
+                    this.y -= this.speed; 
                 }
                 if(keys.includes("S")){
-                    this.y += 0.4;
+                    this.y += this.speed;                    
                 }
-            },
-            keyUp: function(key){
-                console.log(key);
             }
         });
     </script>
