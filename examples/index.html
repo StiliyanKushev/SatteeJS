@@ -25,30 +25,31 @@
         Sattee.init("main",{
             x:0,
             y:0,
-            speed: 0.4,
+            speed: 100,
             setup:function (){
+                Sattee.frameRate = 120;
                 Sattee.draw(0,function(){
                     Sattee.background(51,51,51);
                 });
             },
             loop:function (){
-                Sattee.clear(1,{x:this.x,y:this.y,width:20,height:20});
+                Sattee.clear(1,{x:this.x,y:this.y,width:20,height:20,offset:this.speed});
                 Sattee.draw(1,function(){
                     Sattee.rect(this.x,this.y,20,20);
                 });
             },
             keyDown: function(keys){
                 if(keys.includes("A")){
-                    this.x -= this.speed;
+                    this.x -= this.speed * Sattee.delta;
                 }
                 if(keys.includes("D")){
-                    this.x += this.speed;                    
+                    this.x += this.speed * Sattee.delta;                    
                 }
                 if(keys.includes("W")){
-                    this.y -= this.speed; 
+                    this.y -= this.speed * Sattee.delta; 
                 }
                 if(keys.includes("S")){
-                    this.y += this.speed;                    
+                    this.y += this.speed * Sattee.delta;                    
                 }
             }
         });
