@@ -39,6 +39,7 @@
                 Sattee.draw(1,function(){
                     Sattee.rect(this.x,this.y,20,20);
                 });
+                this.x += this.speed / 200;
             },
             keyDown: function(keys){
                 if(keys.includes("A")){
