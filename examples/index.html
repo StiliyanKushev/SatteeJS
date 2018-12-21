@@ -11,49 +11,28 @@
 
 <body>
     <script>
-        Sattee.load({
-            music: "./music.mp3",
-            background: "./sunset.jpg"
-        });
         Sattee.configure({
             width: 500,
             height: 500,
-            layers: 1,
+            layers: 2,
             name: "example",
             main: "main",
             // timeout , interval , animation
-            loopFunction:"timeout"
+            loopFunction: "animation"
         });
-        Sattee.init("main",{
-            x:0,
-            y:0,
-            speed: 150,
-            setup:function (){
-                Sattee.frameRate = 120;
-                Sattee.draw(0,function(){
-                    Sattee.background(51,51,51);
+        Sattee.init("main", {
+            setup: function () {
+                Sattee.draw(0, function () {
+                    Sattee.background(200, 200, 200);
                 });
             },
-            loop:function (){
-                Sattee.clear(0,{x:this.x,y:this.y,width:20,height:20,offset:this.speed});
-                Sattee.draw(0,function(){
-                    Sattee.background(51,51,51);
-                    Sattee.rect(this.x,this.y,20,20);
-                });
+            loop: function () {
             },
-            keyDown: function(keys){
-                if(keys.includes("A")){
-                    this.x -= Math.floor(this.speed * Sattee.delta);
-                }
-                if(keys.includes("D")){
-                    this.x += Math.floor(this.speed * Sattee.delta);
-                }
-                if(keys.includes("W")){
-                    this.y -= Math.floor(this.speed * Sattee.delta);
-                }
-                if(keys.includes("S")){
-                    this.y += Math.floor(this.speed * Sattee.delta);                 
-                }
+            mouseDragged: function () {
+                Sattee.draw(1, function () {
+                    Sattee.line(Sattee.prevmouseX,Sattee.prevmouseY,Sattee.mouseX,Sattee.mouseY,
+                    {strokeColor: `rgb(${(Sattee.mouseX + Sattee.mouseY) * 0.3},${((Sattee.width - Sattee.mouseX) + (Sattee.height - Sattee.mouseY)) * 0.3},${((Sattee.height - Sattee.mouseX / 2) + (Sattee.width - Sattee.mouseY * 2)) * 0.3})`,strokeSize: (Sattee.mouseX - Sattee.mouseY) / 10});
+                });
             }
         });
     </script>
