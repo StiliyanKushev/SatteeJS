@@ -31,7 +31,7 @@
             mouseDragged: function () {
                 Sattee.draw(1, function () {
                     Sattee.line(Sattee.prevmouseX,Sattee.prevmouseY,Sattee.mouseX,Sattee.mouseY,
-                    {strokeColor: `rgb(${(Sattee.mouseX + Sattee.mouseY) * 0.3},${((Sattee.width - Sattee.mouseX) + (Sattee.height - Sattee.mouseY)) * 0.3},${((Sattee.height - Sattee.mouseX / 2) + (Sattee.width - Sattee.mouseY * 2)) * 0.3})`,strokeSize: (Sattee.mouseX - Sattee.mouseY) / 10});
+                    {strokeSize:50});
                 });
             }
         });
