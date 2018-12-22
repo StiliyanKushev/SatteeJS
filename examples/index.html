@@ -21,34 +21,18 @@
             loopFunction: "animation"
         });
         Sattee.init("main", {
-            x:0,
-            y:0,
-            speed: 3,
-
             setup: function () {
                 Sattee.draw(0, function () {
                     Sattee.background(200, 200, 200);
                 });
             },
             loop: function () {
-                Sattee.clear(1);
-                Sattee.draw(1,function(){
-                    Sattee.rect(this.x,this.y,20,20,{color:'rgb(51,51,51)'});
-                });
             },
-            keyDown: function (keys) {
-                if(keys.includes("A")){
-                    this.x -= this.speed;
-                }
-                if(keys.includes("D")){
-                    this.x += this.speed;
-                }
-                if(keys.includes("W")){
-                    this.y -= this.speed;
-                }
-                if(keys.includes("S")){
-                    this.y += this.speed;
-                }
+            mouseDragged: function () {
+                Sattee.draw(1, function () {
+                    Sattee.line(Sattee.prevmouseX,Sattee.prevmouseY,Sattee.mouseX,Sattee.mouseY,
+                    {strokeSize:60});
+                });
             }
         });
     </script>
