@@ -11,3 +11,12 @@ TODO LIST ON THE RENDERER
 7. Add the functiononality to load a video in the Sattee.preload / Sattee.load function.
 8. Add a function to draw a video on the canvas. Sattee.video(name,x,y,options); Where the options are the same as the image options. I think maybe we need to draw each frame of the video, as Sattee.image(), each frame of animation.
 9. Add a functiononality to controll the Sattee.frameRate when using the loopFunction:"animation" (Window.requestFrame())
+
+:solution-1:https://stackoverflow.com/questions/17125632/html5-canvas-rotate-object-without-moving-coordinates
+:solution-2:https://www.w3schools.com/graphics/canvas_text.asp
+:solution-4:https://www.w3schools.com/tags/canvas_scale.asp
+:solution-5:https://stackoverflow.com/questions/1255512/how-to-draw-a-rounded-rectangle-on-html-canvas
+:solution-6:https://www.w3schools.com/tags/canvas_drawimage.asp
+:solution-7:https://stackoverflow.com/questions/19251983/dynamically-create-a-html5-video-element-without-it-being-shown-in-the-page
+:solution-8:https://stackoverflow.com/questions/4429440/html5-display-video-inside-canvas
+:solution-9:https://stackoverflow.com/questions/19764018/controlling-fps-with-requestanimationframe
