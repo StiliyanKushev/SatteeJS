@@ -2,7 +2,7 @@
 A small framework for making a multiplayer game with built-in html5 canvas renderer
 
 TODO LIST ON THE RENDERER
-1. Add a rotate function in the options object
+~~1. Add a rotate function in the options object~~
 2. We need to add a Sattee.text() function
 3. Add a origin function (ex: origin:"CENTER") in the options object
 4. Add a scale function in the options object
@@ -12,7 +12,7 @@ TODO LIST ON THE RENDERER
 8. Add a function to draw a video on the canvas. Sattee.video(name,x,y,options); Where the options are the same as the image options. I think maybe we need to draw each frame of the video, as Sattee.image(), each frame of animation.
 9. Add a functiononality to controll the Sattee.frameRate when using the loopFunction:"animation" (Window.requestFrame())
 
-:solution-1:https://stackoverflow.com/questions/17125632/html5-canvas-rotate-object-without-moving-coordinates
+~~:solution-1:https://stackoverflow.com/questions/17125632/html5-canvas-rotate-object-without-moving-coordinates~~
 
 :solution-2:https://www.w3schools.com/graphics/canvas_text.asp
 
