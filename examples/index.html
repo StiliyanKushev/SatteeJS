@@ -21,8 +21,7 @@
             loopFunction: "animation"
         });
         Sattee.init("main", {
-            x: 0,
-            y: 0,
+            r: 0,
             setup: function () {
                 Sattee.draw(0, function () {
                     Sattee.background(200, 200, 200);
@@ -30,9 +29,14 @@
             },
             loop: function () {
                 Sattee.clear(1);
-                Sattee.translate(1, Sattee.width / 2, Sattee.height / 2, function () {
+                Sattee.translate(1, 250, 250, function () {
                     Sattee.draw(1, function () {
-                        Sattee.ellipse(this.x, this.y, 30, 30, { color: "rgb(51,51,51)" });
+                        Sattee.triangle(0, 0, 150, 0, 75, 75, {
+                            color: "red",
+                            rotate: this.r++,
+                            // rotateX:Sattee.midPoint(0, 0, 150, 0).x,
+                            // rotateY:Sattee.midPoint(0, 0, 150, 0).y
+                        });
                     });
                 });
             },
