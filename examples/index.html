@@ -11,13 +11,13 @@
 
 <body>
     <script>
-        Sattee.load({
-            player: "g4426.png"
-        });
+        // Sattee.load({
+        //     player: "g4426.png"
+        // });
 
         Sattee.configure({
-            width: 1280,
-            height: 720,
+            width: 500,
+            height: 500,
             layers: 2,
             name: "Example",
             main: "Default",
@@ -32,7 +32,12 @@
             },
             loop: function () {
                 Sattee.draw(1, function () {
-                    Sattee.rect(0, 0, 120, 70, { color: "rgba(51,51,51,1)" });
+                    Sattee.rect(50, 50, 300, 300,
+                    {
+                        strokeSize:50,
+                        strokeColor:"blue",
+                        color:"rgba(255,20,60)",
+                        borderRadius:{upperLeft:500}});
                 });
             }
         });
