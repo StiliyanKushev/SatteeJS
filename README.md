@@ -11,7 +11,7 @@ TODO LIST ON THE RENDERER
 
 4- Add a scale function in the options object
 
-5- Add a border radius in the options object of the rect and triangle functions (the triangle may be tricky)
+~~5- Add a border radius in the options object of the rect and triangle functions (the triangle may be tricky)~~
 
 6- Add a function to draw an image. Sattee.image(name,x,y,options); where options can hold {width,height,opacity,border-radius,origin etc...}
 
@@ -21,13 +21,9 @@ TODO LIST ON THE RENDERER
 
 9- Add a functiononality to controll the Sattee.frameRate when using the loopFunction:"animation" (Window.requestFrame())
 
-~~:solution-1:https://stackoverflow.com/questions/17125632/html5-canvas-rotate-object-without-moving-coordinates~~
-
 :solution-2:https://www.w3schools.com/graphics/canvas_text.asp
 
 :solution-4:https://www.w3schools.com/tags/canvas_scale.asp
-
-:solution-5:https://stackoverflow.com/questions/1255512/how-to-draw-a-rounded-rectangle-on-html-canvas
 
 :solution-6:https://www.w3schools.com/tags/canvas_drawimage.asp
 
