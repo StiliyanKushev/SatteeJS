@@ -1,6 +1,3 @@
-# sattee.js
-A small framework for making a multiplayer game with built-in html5 canvas renderer
-
 TODO LIST ON THE RENDERER
 
 ~~1- Add a rotate function in the options object~~

@@ -12,8 +12,17 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
-    "gulp-minify": "^3.1.0"
+    "gulp-documentation": "^3.2.1",
+    "gulp-minify": "^3.1.0",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "dev": "^0.1.3",
+    "documentation": "^9.1.1",
+    "fs": "0.0.1-security",
+    "gulp-rename": "^1.4.0"
   }
 }
