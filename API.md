@@ -45,46 +45,48 @@
     -   [Examples][41]
 -   [Sattee.textWidth][42]
     -   [Parameters][43]
--   [Sattee.triangle][44]
+-   [Sattee.textHeight][44]
     -   [Parameters][45]
--   [SCENE_MANAGER][46]
--   [Sattee.init][47]
-    -   [Parameters][48]
-    -   [Examples][49]
--   [Sattee.switchScene][50]
-    -   [Parameters][51]
--   [Sattee.exit][52]
--   [EVENT_MANAGER][53]
--   [mouseClicked][54]
-    -   [Examples][55]
--   [mouseReleased][56]
+-   [Sattee.triangle][46]
+    -   [Parameters][47]
+-   [Sattee.init][48]
+    -   [Parameters][49]
+    -   [Examples][50]
+-   [SCENE_MANAGER][51]
+-   [Sattee.switchScene][52]
+    -   [Parameters][53]
+-   [Sattee.exit][54]
+-   [EVENT_MANAGER][55]
+-   [mouseClicked][56]
     -   [Examples][57]
--   [mouseDown][58]
+-   [mouseReleased][58]
     -   [Examples][59]
--   [keyDown][60]
-    -   [Parameters][61]
-    -   [Examples][62]
--   [keyUp][63]
-    -   [Parameters][64]
-    -   [Examples][65]
--   [ERROR_HANDELING][66]
--   [Sattee.validate][67]
-    -   [Parameters][68]
-    -   [Examples][69]
--   [Sattee.validate.arguments][70]
-    -   [Parameters][71]
-    -   [Examples][72]
--   [Sattee.validate.range][73]
-    -   [Parameters][74]
-    -   [Examples][75]
--   [Sattee.validate.type][76]
-    -   [Parameters][77]
-    -   [Examples][78]
--   [MATH][79]
--   [Sattee.distance][80]
-    -   [Parameters][81]
--   [Sattee.midPoint][82]
+-   [mouseDown][60]
+    -   [Examples][61]
+-   [keyDown][62]
+    -   [Parameters][63]
+    -   [Examples][64]
+-   [keyUp][65]
+    -   [Parameters][66]
+    -   [Examples][67]
+-   [ERROR_HANDELING][68]
+-   [Sattee.validate][69]
+    -   [Parameters][70]
+    -   [Examples][71]
+-   [Sattee.validate.arguments][72]
+    -   [Parameters][73]
+    -   [Examples][74]
+-   [Sattee.validate.range][75]
+    -   [Parameters][76]
+    -   [Examples][77]
+-   [Sattee.validate.type][78]
+    -   [Parameters][79]
+    -   [Examples][80]
+-   [MATH][81]
+-   [Sattee.distance][82]
     -   [Parameters][83]
+-   [Sattee.midPoint][84]
+    -   [Parameters][85]
 
 ## SATTEE_OBJECT
 
@@ -94,16 +96,16 @@ this is the sattee object that holds some key features
 
 ### Properties
 
--   `name` **[String][84]** The id of the game div and the begining of the id of each canvas layer followed by the the layer index
--   `container` **[String][84]** The id or class of a div that you want the game div to be in
--   `layers` **[Number][85]** The number of canvases layer on top of each other in the game div
--   `width` **[Number][85]** The width of the game container and all canvases in it
--   `height` **[Number][85]** The height of the game container and all canvases in it
--   `main` **[String][84]** The name of the first game scene that will be played on game start
--   `loopFunction` **[String][84]** The type of function that will be used for controlling the frame aniamtion -> options: timeout,interval,animation (animation is the best)
--   `mouseIsDragged` **[Boolean][86]** True, if the mouse is dragged on one of the canvases
--   `frameRate` **[Number][85]** The frame rate of the animation of the game (can be set using Sattee.frameRate = anyNumber)
--   `delta` **[Number][85]** Time that passed from the last frame to the current one
+-   `name` **[String][86]** The id of the game div and the begining of the id of each canvas layer followed by the the layer index
+-   `container` **[String][86]** The id or class of a div that you want the game div to be in
+-   `layers` **[Number][87]** The number of canvases layer on top of each other in the game div
+-   `width` **[Number][87]** The width of the game container and all canvases in it
+-   `height` **[Number][87]** The height of the game container and all canvases in it
+-   `main` **[String][86]** The name of the first game scene that will be played on game start
+-   `loopFunction` **[String][86]** The type of function that will be used for controlling the frame aniamtion -> options: timeout,interval,animation (animation is the best)
+-   `mouseIsDragged` **[Boolean][88]** True, if the mouse is dragged on one of the canvases
+-   `frameRate` **[Number][87]** The frame rate of the animation of the game (can be set using Sattee.frameRate = anyNumber)
+-   `delta` **[Number][87]** Time that passed from the last frame to the current one
 
 ## Sattee.load
 
@@ -111,20 +113,20 @@ This function loads given assets as key-value pair of an object (ex: myImage:pat
 
 ### Parameters
 
--   `assets` **[Object][87]** 
+-   `assets` **[Object][89]** 
 
 ## Sattee.configure
 
 ### Parameters
 
--   `settings` **[Object][87]** All of the settings that you can give to Sattee when configuring a game
-    -   `settings.name` **[String][84]** The id of the game div and the begining of the id of each canvas layer followed by the the layer index
-    -   `settings.container` **[String][84]** The id or class of a div that you want the game div to be in (optional, default `body`)
-    -   `settings.layers` **[Number][85]** The number of canvases layer on top of each other in the game div
-    -   `settings.width` **[Number][85]** The width of the game container and all canvases in it
-    -   `settings.height` **[Number][85]** The height of the game container and all canvases in it
-    -   `settings.main` **[String][84]** The name of the first game scene that will be played on game start
-    -   `settings.loopFunction` **[String][84]** The type of function that will be used for controlling the frame aniamtion -> options: timeout,interval,animation (animation is the best)
+-   `settings` **[Object][89]** All of the settings that you can give to Sattee when configuring a game
+    -   `settings.name` **[String][86]** The id of the game div and the begining of the id of each canvas layer followed by the the layer index
+    -   `settings.container` **[String][86]** The id or class of a div that you want the game div to be in (optional, default `body`)
+    -   `settings.layers` **[Number][87]** The number of canvases layer on top of each other in the game div
+    -   `settings.width` **[Number][87]** The width of the game container and all canvases in it
+    -   `settings.height` **[Number][87]** The height of the game container and all canvases in it
+    -   `settings.main` **[String][86]** The name of the first game scene that will be played on game start
+    -   `settings.loopFunction` **[String][86]** The type of function that will be used for controlling the frame aniamtion -> options: timeout,interval,animation (animation is the best)
 
 ## Sattee.loaded
 
@@ -138,8 +140,8 @@ This function loads an image file and save it in the Sattee.assets array
 
 ### Parameters
 
--   `path` **[String][84]** the path to the image file
--   `callback` **[Function][88]** a callback when the image is loaded
+-   `path` **[String][86]** the path to the image file
+-   `callback` **[Function][90]** a callback when the image is loaded
 
 ## Sattee.loadSound
 
@@ -147,8 +149,8 @@ This function loads a sound file and save it in the Sattee.assets array
 
 ### Parameters
 
--   `path` **[String][84]** the path to the sound file
--   `callback` **[Function][88]** a callback when the sound is loaded
+-   `path` **[String][86]** the path to the sound file
+-   `callback` **[Function][90]** a callback when the sound is loaded
 
 ## RENDERING
 
@@ -158,8 +160,8 @@ The draw function must be called each time you try to draw on the canvas (any of
 
 ### Parameters
 
--   `layer` **[Number][85]** the layer you will be drawing
--   `func` **[Function][88]** a function that contains all of the drawing functions
+-   `layer` **[Number][87]** the layer you will be drawing
+-   `func` **[Function][90]** a function that contains all of the drawing functions
 
 ### Examples
 
@@ -175,10 +177,10 @@ This function draws the background of the canvas using rgba values
 
 ### Parameters
 
--   `r` **[Number][85]** the red color 0 - 255
--   `g` **[Number][85]** the green color 0 - 255
--   `b` **[Number][85]** the blue color 0 - 255
--   `a` **[Number][85]** the alpha (opacity) color 0 - 1 (optional, default `1`)
+-   `r` **[Number][87]** the red color 0 - 255
+-   `g` **[Number][87]** the green color 0 - 255
+-   `b` **[Number][87]** the blue color 0 - 255
+-   `a` **[Number][87]** the alpha (opacity) color 0 - 1 (optional, default `1`)
 
 ### Examples
 
@@ -195,8 +197,8 @@ This function clears all pixels on the canvas
 
 ### Parameters
 
--   `layer` **[Number][85]** the layer you want to clear
--   `options` **[Object][87]** you can give as options an x,y,w,h of where you want to clear the canvas. This may increse the FPS (optional, default `{}`)
+-   `layer` **[Number][87]** the layer you want to clear
+-   `options` **[Object][89]** you can give as options an x,y,w,h of where you want to clear the canvas. This may increse the FPS (optional, default `{}`)
 
 ### Examples
 
@@ -212,15 +214,15 @@ Here are all possible styling options
 
 ### Parameters
 
--   `color` **[String][84]** [ "rgb(41,41,41)", "rgba(21,21,21,0.4)", "#fff", "red" ]
--   `strokeColor` **[String][84]** [ "rgb(41,41,41)", "rgba(21,21,21,0.4)", "#fff", "red" ]
--   `strokeSize` **[Number][85]** size of the stroke
--   `borderRadius` **[Object][87]** an object that holds the borderRadius settings
+-   `color` **[String][86]** [ "rgb(41,41,41)", "rgba(21,21,21,0.4)", "#fff", "red" ]
+-   `strokeColor` **[String][86]** [ "rgb(41,41,41)", "rgba(21,21,21,0.4)", "#fff", "red" ]
+-   `strokeSize` **[Number][87]** size of the stroke
+-   `borderRadius` **[Object][89]** an object that holds the borderRadius settings
     Examples for the border Radius
--   `rotate` **[Number][85]** Degrees of rotation of the drawing
+-   `rotate` **[Number][87]** Degrees of rotation of the drawing
     By default the drawing is rotated by its 0,0 origin, but you can change that with rotateX,rotateY
--   `rotateX` **[Number][85]** custom X that the drawing will be rotated by
--   `rotateY` **[Number][85]** custom Y that the drawing will be rotated by
+-   `rotateX` **[Number][87]** custom X that the drawing will be rotated by
+-   `rotateY` **[Number][87]** custom Y that the drawing will be rotated by
     Here is an example for how to use the rotate, rotateX, rotateY
 
 ### Examples
@@ -273,11 +275,11 @@ draws a rectangle on the canvas
 
 ### Parameters
 
--   `x` **[Number][85]** the x cordinate of the drawing
--   `x` **[Number][85]** the y cordinate of the drawing
--   `w` **[Number][85]** the width of the drawing
--   `h` **[Number][85]** the height of the drawing
--   `options` **[Object][87]** You can specify the styling of the drawing (optional, default `{}`)
+-   `x` **[Number][87]** the x cordinate of the drawing
+-   `x` **[Number][87]** the y cordinate of the drawing
+-   `w` **[Number][87]** the width of the drawing
+-   `h` **[Number][87]** the height of the drawing
+-   `options` **[Object][89]** You can specify the styling of the drawing (optional, default `{}`)
 
 ### Examples
 
@@ -296,13 +298,13 @@ draws a rectangle on the canvas
 
 ### Parameters
 
--   `x1` **[Number][85]** the x cordinate of the first point of the drawing
--   `y1` **[Number][85]** the y cordinate of the first point of the drawing
--   `x2` **[Number][85]** the x cordinate of the seccond point of the drawing
--   `y2` **[Number][85]** the y cordinate of the seccond point of the drawing
--   `x3` **[Number][85]** the x cordinate of the third point of the drawing
--   `y3` **[Number][85]** the y cordinate of the third point of the drawing
--   `options` **[Object][87]** You can specify the styling of the drawing (optional, default `{}`)
+-   `x1` **[Number][87]** the x cordinate of the first point of the drawing
+-   `y1` **[Number][87]** the y cordinate of the first point of the drawing
+-   `x2` **[Number][87]** the x cordinate of the seccond point of the drawing
+-   `y2` **[Number][87]** the y cordinate of the seccond point of the drawing
+-   `x3` **[Number][87]** the x cordinate of the third point of the drawing
+-   `y3` **[Number][87]** the y cordinate of the third point of the drawing
+-   `options` **[Object][89]** You can specify the styling of the drawing (optional, default `{}`)
 
 ### Examples
 
@@ -321,11 +323,11 @@ draws an ellipse on the canvas
 
 ### Parameters
 
--   `x` **[Number][85]** the x cordinate of the drawing
--   `y` **[Number][85]** the y cordinate of the drawing
--   `w` **[Number][85]** the width of the drawing
--   `h` **[Number][85]** the height of the drawing
--   `options` **[Object][87]** You can specify the styling of the drawing (optional, default `{}`)
+-   `x` **[Number][87]** the x cordinate of the drawing
+-   `y` **[Number][87]** the y cordinate of the drawing
+-   `w` **[Number][87]** the width of the drawing
+-   `h` **[Number][87]** the height of the drawing
+-   `options` **[Object][89]** You can specify the styling of the drawing (optional, default `{}`)
 
 ### Examples
 
@@ -344,11 +346,11 @@ draws a line on the canvas
 
 ### Parameters
 
--   `x1` **[Number][85]** the x cordinate of the first point of the drawing
--   `y1` **[Number][85]** the y cordinate of the first point of the drawing
--   `x2` **[Number][85]** the x cordinate of the seccond point of the drawing
--   `y2` **[Number][85]** the y cordinate of the seccond point of the drawing
--   `options` **[Object][87]** You can specify the styling of the drawing (optional, default `{}`)
+-   `x1` **[Number][87]** the x cordinate of the first point of the drawing
+-   `y1` **[Number][87]** the y cordinate of the first point of the drawing
+-   `x2` **[Number][87]** the x cordinate of the seccond point of the drawing
+-   `y2` **[Number][87]** the y cordinate of the seccond point of the drawing
+-   `options` **[Object][89]** You can specify the styling of the drawing (optional, default `{}`)
 
 ### Examples
 
@@ -367,11 +369,11 @@ The function draws a text on the current canvas
 
 ### Parameters
 
--   `text` **[String][84]** the text you want to display
--   `x` **[Number][85]** the x cordinate
--   `y` **[Number][85]** the y cordinate
--   `options` **[Object][87]** the styling options (optional, default `{}`)
-    -   `options.size` **[Number][85]** This is a specific property for the text function that holds the fontSize
+-   `text` **[String][86]** the text you want to display
+-   `x` **[Number][87]** the x cordinate
+-   `y` **[Number][87]** the y cordinate
+-   `options` **[Object][89]** the styling options (optional, default `{}`)
+    -   `options.size` **[Number][87]** This is a specific property for the text function that holds the fontSize
 
 ### Examples
 
@@ -393,10 +395,21 @@ The function calculates the width of a text at a specific size
 
 ### Parameters
 
--   `text` **[String][84]** the text you wish to mesure
--   `size` **[Number][85]** the size of the text you wish to mesure
+-   `text` **[String][86]** the text you wish to mesure
+-   `size` **[Number][87]** the size of the text you wish to mesure
 
-Returns **[Number][85]** the width of the given text at the given size
+Returns **[Number][87]** the width of the given text at the given size
+
+## Sattee.textHeight
+
+The function calculates the height of a text at a specific size
+
+### Parameters
+
+-   `text` **[String][86]** the text you wish to mesure
+-   `size` **[Number][87]** the size of the text you wish to mesure
+
+Returns **[Number][87]** the height of the given text at the given size
 
 ## Sattee.triangle
 
@@ -404,12 +417,10 @@ temporary sets the canvas (0,0) origin to whatever the x and y is given as an ar
 
 ### Parameters
 
--   `layer` **[Number][85]** the canvas layer you will temporary translate
--   `x` **[Number][85]** the x you will translate by
--   `y` **[Number][85]** the y you will translate by
--   `func` **[Function][88]** all drawings in this function will ve translated
-
-## SCENE_MANAGER
+-   `layer` **[Number][87]** the canvas layer you will temporary translate
+-   `x` **[Number][87]** the x you will translate by
+-   `y` **[Number][87]** the y you will translate by
+-   `func` **[Function][90]** all drawings in this function will ve translated
 
 ## Sattee.init
 
@@ -417,8 +428,8 @@ This function creates a new scene in the Sattee object
 
 ### Parameters
 
--   `name` **[String][84]** the name of the scene
--   `sceneBody` **[Object][87]** the scene body
+-   `name` **[String][86]** the name of the scene
+-   `sceneBody` **[Object][89]** the scene body
 
 ### Examples
 
@@ -433,14 +444,16 @@ Sattee.init("mainScene",{
 });
 ```
 
+## SCENE_MANAGER
+
 ## Sattee.switchScene
 
 This function switches to a new scene in the Sattee object
 
 ### Parameters
 
--   `name` **[String][84]** the name of the scene
--   `reset` **[Boolean][86]** if true it will also run the setup function of the next scene (optional, default `false`)
+-   `name` **[String][86]** the name of the scene
+-   `reset` **[Boolean][88]** if true it will also run the setup function of the next scene (optional, default `false`)
 
 ## Sattee.exit
 
@@ -514,7 +527,7 @@ Event function used in a scene for detecting all keys that are currently down
 
 ### Parameters
 
--   `keys` **[Array][89]** an array of keys that are fired on that event ex: ["A","S","D"]
+-   `keys` **[Array][91]** an array of keys that are fired on that event ex: ["A","S","D"]
 
 ### Examples
 
@@ -541,7 +554,7 @@ Event function used in a scene for detecting all keys that are currently up
 
 ### Parameters
 
--   `keys` **[Array][89]** an array of keys that are fired on that event ex: ["A","S","D"]
+-   `keys` **[Array][91]** an array of keys that are fired on that event ex: ["A","S","D"]
 
 ### Examples
 
@@ -570,7 +583,7 @@ This function can check and validate the arguments of another function
 
 ### Parameters
 
--   `funcName` **[String][84]** The name of the function that you wish to validate (optional, default `"Checks if you are in a draw function"`)
+-   `funcName` **[String][86]** The name of the function that you wish to validate (optional, default `"Checks if you are in a draw function"`)
 
 ### Examples
 
@@ -580,7 +593,7 @@ let checkMyFunction = Sattee.validate(myFunction);
 //you can now chain functions from the returned object
 ```
 
-Returns **[Object][87]** An object that holds all of the validation functions (used for chaining)
+Returns **[Object][89]** An object that holds all of the validation functions (used for chaining)
 
 ## Sattee.validate.arguments
 
@@ -588,9 +601,9 @@ checks if all arguments are defined and are the correct count
 
 ### Parameters
 
--   `args` **[Array][89]** all of the arguments
--   `count` **[Number][85]** the count that the arguments should be
--   `e` **[String][84]** the error that will be displayed if something goes wrong (optional, default `"not enough or invald arguments"`)
+-   `args` **[Array][91]** all of the arguments
+-   `count` **[Number][87]** the count that the arguments should be
+-   `e` **[String][86]** the error that will be displayed if something goes wrong (optional, default `"not enough or invald arguments"`)
 
 ### Examples
 
@@ -606,10 +619,10 @@ validates true if a given number is bettween the given minimum and maximum
 
 ### Parameters
 
--   `num` **[Number][85]** the number that you are checking
--   `min` **[Number][85]** the minimum
--   `max` **[Number][85]** the maximum
--   `e` **[String][84]** the error that will be displayed if something goes wrong (optional, default `"one or more of the arguments with type of number is with invalid range"`)
+-   `num` **[Number][87]** the number that you are checking
+-   `min` **[Number][87]** the minimum
+-   `max` **[Number][87]** the maximum
+-   `e` **[String][86]** the error that will be displayed if something goes wrong (optional, default `"one or more of the arguments with type of number is with invalid range"`)
 
 ### Examples
 
@@ -627,8 +640,8 @@ validates true if a all of the given arguments are the correct given type
 
 ### Parameters
 
--   `arr` **[Array][89]** An array that holds all all data and types ex: [2,"number","myName","string",false,"boolean"]
--   `e` **[String][84]** the error that will be displayed if something goes wrong (optional, default `"wrong type of argument on one or more of the give arguments"`)
+-   `arr` **[Array][91]** An array that holds all all data and types ex: [2,"number","myName","string",false,"boolean"]
+-   `e` **[String][86]** the error that will be displayed if something goes wrong (optional, default `"wrong type of argument on one or more of the give arguments"`)
 
 ### Examples
 
@@ -649,12 +662,12 @@ calculates the distance between 2 points
 
 ### Parameters
 
--   `x1` **[Number][85]** x of first point
--   `y1` **[Number][85]** y of first point
--   `x2` **[Number][85]** x of second point
--   `y2` **[Number][85]** y of second point
+-   `x1` **[Number][87]** x of first point
+-   `y1` **[Number][87]** y of first point
+-   `x2` **[Number][87]** x of second point
+-   `y2` **[Number][87]** y of second point
 
-Returns **[Number][85]** The distance between the 2 points
+Returns **[Number][87]** The distance between the 2 points
 
 ## Sattee.midPoint
 
@@ -662,12 +675,12 @@ calculates the position of a point in the middle of 2 points
 
 ### Parameters
 
--   `x1` **[Number][85]** x of first point
--   `y1` **[Number][85]** y of first point
--   `x2` **[Number][85]** x of second point
--   `y2` **[Number][85]** y of second point
+-   `x1` **[Number][87]** x of first point
+-   `y1` **[Number][87]** y of first point
+-   `x2` **[Number][87]** x of second point
+-   `y2` **[Number][87]** y of second point
 
-Returns **[Object][87]** A point that is in the middle of the 2 given points
+Returns **[Object][89]** A point that is in the middle of the 2 given points
 
 [1]: #sattee_object
 
@@ -755,94 +768,98 @@ Returns **[Object][87]** A point that is in the middle of the 2 given points
 
 [43]: #parameters-13
 
-[44]: #satteetriangle
+[44]: #satteetextheight
 
 [45]: #parameters-14
 
-[46]: #scene_manager
+[46]: #satteetriangle
 
-[47]: #satteeinit
+[47]: #parameters-15
 
-[48]: #parameters-15
+[48]: #satteeinit
 
-[49]: #examples-9
+[49]: #parameters-16
 
-[50]: #satteeswitchscene
+[50]: #examples-9
 
-[51]: #parameters-16
+[51]: #scene_manager
 
-[52]: #satteeexit
+[52]: #satteeswitchscene
 
-[53]: #event_manager
+[53]: #parameters-17
 
-[54]: #mouseclicked
+[54]: #satteeexit
 
-[55]: #examples-10
+[55]: #event_manager
 
-[56]: #mousereleased
+[56]: #mouseclicked
 
-[57]: #examples-11
+[57]: #examples-10
 
-[58]: #mousedown
+[58]: #mousereleased
 
-[59]: #examples-12
+[59]: #examples-11
 
-[60]: #keydown
+[60]: #mousedown
 
-[61]: #parameters-17
+[61]: #examples-12
 
-[62]: #examples-13
+[62]: #keydown
 
-[63]: #keyup
+[63]: #parameters-18
 
-[64]: #parameters-18
+[64]: #examples-13
 
-[65]: #examples-14
+[65]: #keyup
 
-[66]: #error_handeling
+[66]: #parameters-19
 
-[67]: #satteevalidate
+[67]: #examples-14
 
-[68]: #parameters-19
+[68]: #error_handeling
 
-[69]: #examples-15
+[69]: #satteevalidate
 
-[70]: #satteevalidatearguments
+[70]: #parameters-20
 
-[71]: #parameters-20
+[71]: #examples-15
 
-[72]: #examples-16
+[72]: #satteevalidatearguments
 
-[73]: #satteevalidaterange
+[73]: #parameters-21
 
-[74]: #parameters-21
+[74]: #examples-16
 
-[75]: #examples-17
+[75]: #satteevalidaterange
 
-[76]: #satteevalidatetype
+[76]: #parameters-22
 
-[77]: #parameters-22
+[77]: #examples-17
 
-[78]: #examples-18
+[78]: #satteevalidatetype
 
-[79]: #math
+[79]: #parameters-23
 
-[80]: #satteedistance
+[80]: #examples-18
 
-[81]: #parameters-23
+[81]: #math
 
-[82]: #satteemidpoint
+[82]: #satteedistance
 
 [83]: #parameters-24
 
-[84]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[84]: #satteemidpoint
 
-[85]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[85]: #parameters-25
 
-[86]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[86]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
-[87]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[87]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
 
-[88]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+[88]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 
-[89]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[89]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[90]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+
+[91]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
