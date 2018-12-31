@@ -4,7 +4,7 @@ TODO LIST ON THE RENDERER
 
 ~~2- Add a Sattee.text() function~~
 
-3- Add a origin function (ex: origin:"CENTER") in the options object
+~~3- Add a origin function (ex: origin:"CENTER") in the options object~~
 
 4- Add a scale function in the options object
 
