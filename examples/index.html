@@ -25,7 +25,9 @@
         });
 
         Sattee.init("Default", {
-            r: 5,
+            centerStyle:{
+                center:true,
+            },
             setup: function () {
                 Sattee.draw(0, function () {
                     Sattee.background(200, 200, 200);
@@ -35,12 +37,10 @@
                 Sattee.clear(1);
                 Sattee.translate(1, Sattee.width / 2, Sattee.height / 2, function () {
                     Sattee.draw(1, function () {
-                        Sattee.text("Stiliyan Iliyanov Kushev", 0, 0, {
-                            color: "rgba(51,51,51)",
-                            size: 20,
-                            rotate: this.r,
-                            rotateX: Sattee.textWidth("Stiliyan Iliyanov Kushev", 20) / 2,
-                        });
+                        Sattee.rect(0,0,40,40,this.centerStyle);
+                    });
+                    Sattee.draw(1, function () {
+                        Sattee.ellipse(50,50,40,40,this.centerStyle);
                     });
                 });
             }
