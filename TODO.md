@@ -2,7 +2,7 @@ TODO LIST ON THE RENDERER
 
 ~~1- Add a rotate function in the options object~~
 
-2- We need to add a Sattee.text() function
+~~2- Add a Sattee.text() function~~
 
 3- Add a origin function (ex: origin:"CENTER") in the options object
 
@@ -17,8 +17,6 @@ TODO LIST ON THE RENDERER
 8- Add a function to draw a video on the canvas. Sattee.video(name,x,y,options); Where the options are the same as the image options. I think maybe we need to draw each frame of the video, as Sattee.image(), each frame of animation.
 
 9- Add a functiononality to controll the Sattee.frameRate when using the loopFunction:"animation" (Window.requestFrame())
-
-:solution-2:https://www.w3schools.com/graphics/canvas_text.asp
 
 :solution-4:https://www.w3schools.com/tags/canvas_scale.asp
 
