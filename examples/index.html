@@ -11,13 +11,13 @@
 
 <body>
     <script>
-        // Sattee.load({
-        //     player: "g4426.png"
-        // });
+        Sattee.load({
+            big: "big.jpg"
+        });
 
         Sattee.configure({
-            width: 500,
-            height: 500,
+            width: window.innerWidth,
+            height: window.innerHeight,
             layers: 2,
             name: "Example",
             main: "Default",
@@ -25,20 +25,10 @@
         });
 
         Sattee.init("Default", {
-            centerStyle:{
-                center:true,
-            },
             setup: function () {
                 Sattee.draw(0, function () {
                     Sattee.background("gray");
-                });
-            },
-            loop: function () {
-                Sattee.draw(0,function(){Sattee.background("grey")});
-                Sattee.scale(0,1,1,function(){
-                    Sattee.draw(0,function(){
-                        Sattee.rect(0,0,50,50);
-                    });
+                    Sattee.image("big", 0, 0, Sattee.width, Sattee.height);
                 });
             }
         });
