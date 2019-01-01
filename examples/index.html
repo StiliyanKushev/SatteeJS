@@ -30,17 +30,14 @@
             },
             setup: function () {
                 Sattee.draw(0, function () {
-                    Sattee.background(200, 200, 200);
+                    Sattee.background("gray");
                 });
             },
             loop: function () {
-                Sattee.clear(1);
-                Sattee.translate(1, Sattee.width / 2, Sattee.height / 2, function () {
-                    Sattee.draw(1, function () {
-                        Sattee.rect(0,0,40,40,this.centerStyle);
-                    });
-                    Sattee.draw(1, function () {
-                        Sattee.ellipse(50,50,40,40,this.centerStyle);
+                Sattee.draw(0,function(){Sattee.background("grey")});
+                Sattee.scale(0,1,1,function(){
+                    Sattee.draw(0,function(){
+                        Sattee.rect(0,0,50,50);
                     });
                 });
             }
