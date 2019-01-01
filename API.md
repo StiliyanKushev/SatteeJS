@@ -206,7 +206,6 @@ This function loads given assets as key-value pair of an object (ex: myImage:pat
     -   `settings.width` **[Number][92]** The width of the game container and all canvases in it
     -   `settings.height` **[Number][92]** The height of the game container and all canvases in it
     -   `settings.main` **[String][91]** The name of the first game scene that will be played on game start
-    -   `settings.loopFunction` **[String][91]** The type of function that will be used for controlling the frame aniamtion -> options: timeout,interval,animation (animation is the best)
 
 ## Sattee.loaded
 
