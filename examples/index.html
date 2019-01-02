@@ -37,7 +37,7 @@
                 Sattee.clear(1);
                 Sattee.draw(1,function(){
                     this.x += this.speed;
-                    if(this.x <= 0 || this.x >= Sattee.width) {this.speed *= -1; }
+                    if(this.x <= 0 || this.x + 20 >= Sattee.width) {this.speed *= -1; }
                     Sattee.rect(this.x,Sattee.height / 2,20,20,{
                         center:true,
                         rotate:this.r++
