@@ -12,11 +12,11 @@
 <body>
     <script>
         Sattee.load({
-            big: "big.jpg"
+            video: "cuted.mp4"
         });
 
         Sattee.configure({
-            width: 500,
+            width: 700,
             height: 500,
             layers: 2,
             name: "Example",
@@ -24,25 +24,27 @@
         });
 
         Sattee.init("Default", {
-            speed:4,
-            frame:0,
-            x:0,
-            r:0,
             setup: function(){
                 Sattee.draw(0,function(){
                     Sattee.background("gray");
                 });
-            },
-            loop: function () {
-                Sattee.clear(1);
                 Sattee.draw(1,function(){
-                    this.x += this.speed;
-                    if(this.x <= 0 || this.x + 20 >= Sattee.width) {this.speed *= -1; }
-                    Sattee.rect(this.x,Sattee.height / 2,20,20,{
-                        center:true,
-                        rotate:this.r++
+                    Sattee.video("video",100,100,Sattee.width - 200,Sattee.height - 200,
+                    {
+                        time:2,
+                        status:"play",
+                        borderRadius:{all:10},
+                        // ended: function(){
+                        //     Sattee.clear(1);
+                        // }
                     });
                 });
+                Sattee.draw(1,function(){
+                    Sattee.video("video",0,0,0,0,{status:"pause"});
+                });
+                // Sattee.clear(1);
+            },
+            loop: function () {
             }
         });
     </script>
