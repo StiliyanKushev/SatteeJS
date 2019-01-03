@@ -11,6 +11,7 @@
 
 <body>
     <script>
+        document.body.click();
         Sattee.load({
             video: "clip.mp4"
         });
@@ -24,30 +25,34 @@
         });
 
         Sattee.init("Default", {
+            x: 0,
             setup: function () {
                 Sattee.draw(0, function () {
                     Sattee.background("gray");
                 });
-                // Sattee.draw(1, function () {
-                //     Sattee.video("video", 100, 100, Sattee.width - 200, Sattee.height - 200,
-                //         {
-                //             time: 2,
-                //             status: "play",
-                //             borderRadius: { all: 20 },
-                //             strokeSize: 10,
-                //             strokeColor: "rgba(200,200,200,0.6)",
-                //             ended: function () {
-                //                 Sattee.clear(1);
-                //             }
-                //         });
-                // });
             },
             loop: function () {
-            },
-            mouseDragged: function () {
-                Sattee.draw(1, function () {
-                    Sattee.line(Sattee.prevmouseX, Sattee.prevmouseY, Sattee.mouseX, Sattee.mouseY, { strokeColor: "white",strokeSize:40 });
-                });
+                this.x++;
+                if (this.x >= 500) {
+                    Sattee.draw(1, function () {
+                        Sattee.video("video", 0, 0, 0, 0, { status: "stop"});
+                    });
+                    Sattee.clear(1);
+                }
+                else {
+                    Sattee.draw(1, function () {
+                        Sattee.video("video", 100, 100, Sattee.width - 200, Sattee.height - 200,
+                            {
+                                status: "play",
+                                borderRadius: { all: 20 },
+                                strokeSize: 10,
+                                strokeColor: "rgba(200,200,200,0.6)",
+                                ended: function () {
+
+                                }
+                            });
+                    });
+                }
             }
         });
     </script>
