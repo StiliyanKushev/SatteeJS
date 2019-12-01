@@ -13,6 +13,7 @@ this is the sattee object that holds some key features
 -   `layers` **[Number][2]** The number of canvases layer on top of each other in the game div
 -   `width` **[Number][2]** The width of the game container and all canvases in it
 -   `height` **[Number][2]** The height of the game container and all canvases in it
+    value of 0 on both width and height means full screen / auto ajust to the size of div
 -   `main` **[String][1]** The name of the first game scene that will be played on game start
 -   `loopFunction` **[String][1]** The type of function that will be used for controlling the frame aniamtion -> options: timeout,interval,animation (animation is the best)
 -   `mouseIsDragged` **[Boolean][3]** True, if the mouse is dragged on one of the canvases
@@ -114,11 +115,20 @@ This function loads given assets as key-value pair of an object (ex: myImage:pat
     -   `settings.height` **[Number][2]** The height of the game container and all canvases in it
     -   `settings.main` **[String][1]** The name of the first game scene that will be played on game start
 
+## LOADING
+
 ## Sattee.loaded
 
 holds the percentage of the loaded canvas game.
 
-## LOADING
+## Sattee.loadVideo
+
+This function loads an video file and save it in the Sattee.assets array
+
+### Parameters
+
+-   `path` **[String][1]** the path to the video file
+-   `callback` **[Function][5]** a callback when the video is loaded
 
 ## Sattee.loadImage
 
