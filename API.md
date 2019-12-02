@@ -95,6 +95,12 @@ Sattee.draw(0,function(){
 });
 ```
 
+## LOADING
+
+## Sattee.loaded
+
+holds the percentage of the loaded canvas game.
+
 ## Sattee.load
 
 This function loads given assets as key-value pair of an object (ex: myImage:path/to/image.png)
@@ -114,12 +120,6 @@ This function loads given assets as key-value pair of an object (ex: myImage:pat
     -   `settings.width` **[Number][2]** The width of the game container and all canvases in it
     -   `settings.height` **[Number][2]** The height of the game container and all canvases in it
     -   `settings.main` **[String][1]** The name of the first game scene that will be played on game start
-
-## LOADING
-
-## Sattee.loaded
-
-holds the percentage of the loaded canvas game.
 
 ## Sattee.loadVideo
 
@@ -148,7 +148,7 @@ This function loads a sound file and save it in the Sattee.assets array
 -   `path` **[String][1]** the path to the sound file
 -   `callback` **[Function][5]** a callback when the sound is loaded
 
-## RENDERING
+## pixel
 
 ## Sattee.draw
 
@@ -659,6 +659,12 @@ calculates the position of a point in the middle of 2 points
 -   `y2` **[Number][2]** y of second point
 
 Returns **[Object][4]** A point that is in the middle of the 2 given points
+
+## SResponsiveDrawable
+
+### Parameters
+
+-   `inputObj`  
 
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 

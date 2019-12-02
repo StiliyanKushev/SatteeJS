@@ -1,8 +1,9 @@
 let settings = {
     name: "example",
-    layers: 1,
-    width: 500,
-    height: 300,
+    layers: 2,
+    width: 1000,
+    height: 500,
+    // fullScreen: true,
     main: "main"
 };
 
