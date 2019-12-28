@@ -3,7 +3,7 @@ let settings = {
     layers: 2,
     width: 1000,
     height: 500,
-    // fullScreen: true,
+    fullScreen: true,
     main: "main"
 };
 

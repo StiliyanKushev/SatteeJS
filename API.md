@@ -95,6 +95,12 @@ Sattee.draw(0,function(){
 });
 ```
 
+### optionsPercentages
+
+#### Parameters
+
+-   `options`  
+
 ## LOADING
 
 ## Sattee.loaded
@@ -659,12 +665,6 @@ calculates the position of a point in the middle of 2 points
 -   `y2` **[Number][2]** y of second point
 
 Returns **[Object][4]** A point that is in the middle of the 2 given points
-
-## SResponsiveDrawable
-
-### Parameters
-
--   `inputObj`  
 
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 

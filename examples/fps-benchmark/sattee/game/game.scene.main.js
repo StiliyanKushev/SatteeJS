@@ -1,13 +1,12 @@
 Sattee.init("main", {
-    count: 1,
+    increment:100,
     arr: [],
     setup: function () {
-        for(let i = 0; i < this.count;i++){
+        for(let i = 0; i < 1;i++){
             this.arr.push(new Bunny());
         }
     },
     loop: function () {
-        console.log("Number if bunnies: " + this.arr.length);
         for(let i = 0; i < Sattee.layers;i++){
             Sattee.clear(i);
         }
@@ -15,12 +14,24 @@ Sattee.init("main", {
             this.arr[i].update();
             this.arr[i].render();
         }
+        Sattee.clear(0,{
+            x:0,
+            y:0,
+            width:100,
+            height:50
+        });
+        Sattee.draw(0,function(){
+            Sattee.text(Sattee.frameRate + " - " + this.arr.length,0,Sattee.textHeight("" + Sattee.delta,20),{
+                size:20,
+                color:"red",
+            });
+        });
     },
     mouseClicked(){
-        this.count += 150;
-        for(let i = 0; i < this.count - this.arr.length;i++){
+        for(let i = 0; i < this.increment;i++){
             this.arr.push(new Bunny());
         }
+        console.log("Number of bunnies: " + this.arr.length);
     }
 });
 
